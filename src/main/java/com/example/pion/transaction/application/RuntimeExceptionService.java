@@ -17,7 +17,7 @@ public class RuntimeExceptionService {
 		transactionDao.save(new Transaction("Not Error", content));
 	}
 	
-	@Transactional
+	@Transactional(readOnly = true)
 	public void throwRuntimeExceptionAfterSave(String content) {
 		transactionDao.save(new Transaction("RuntimeException", content));
 		throw new RuntimeException();
