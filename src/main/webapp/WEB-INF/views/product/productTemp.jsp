@@ -6,7 +6,13 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+<%
+	String name = (String)request.getAttribute("name");
+
+
+%>
 <body>
-Hello, Pionnet Shop My name is Minsoo
+<%=name%>
+
 </body>
 </html>
