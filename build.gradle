@@ -22,6 +22,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 
 	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.0'
+	
+	//jsp import
 	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
 	implementation 'org.projectlombok:lombok:1.18.24'
 	
@@ -31,7 +33,11 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'io.rest-assured:rest-assured:5.3.0'
 	
+	//restart 화면 
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	
+	annotationProcessor 'org.projectlombok:lombok'
+	compileOnly 'org.projectlombok:lombok'
 }
 
 tasks.named('test') {
