@@ -4,11 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Root 템플릿</title>
+<title>Error Page</title>
 </head>
 <body>
-	<%@ include file="header.jsp" %>
-	<%@ include file="product/productList.jsp" %>
-	<%@ include file="footer.jsp" %>
+여기는 커스텀 에러 페이지입니다.
 </body>
 </html>
